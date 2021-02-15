@@ -1,26 +1,66 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FiMail, FiPhoneCall } from 'react-icons/fi';
+import { FaTelegramPlane } from 'react-icons/fa';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import GlobalStyle from './assets/styles/global';
+
+import { TopFullWidth, BottomFullWidth } from './assets/styles/waitPage';
+
+import logoImage from './assets/images/loooping.svg';
+
+const App: React.FC = () => (
+  <>
+    <GlobalStyle />
+
+    <TopFullWidth>
+      <div className="container">
+        <header>
+          <a href="/">
+            <img src={logoImage} alt="Loooping Desenvolvimento Web" />
+          </a>
+
+          <h1>Loooping Desenvolvimento Web</h1>
+        </header>
+      </div>
+    </TopFullWidth>
+
+    <BottomFullWidth>
+      <div className="container">
+        <main>
+          <p>
+            Nosso novo site está em desenvolvimento, se você precisa desenvolver
+            ou manter um projeto entre em contato conosco
+          </p>
+
+          <ul>
+            <li>
+              <a href="mailto:contato@loooping.com.br?Subject=Quero%20falar%20sobre%20um%20novo%20projeto">
+                <FiMail size={28} />
+                contato@loooping.com.br
+              </a>
+            </li>
+
+            <li>
+              <a href="tel:+5511998109325">
+                <FiPhoneCall size={28} />
+                <small>(11)</small>
+                99810-9325
+              </a>
+            </li>
+
+            <li>
+              <a href="https://t.me/loooping">
+                <FaTelegramPlane size={28} />
+                loooping
+              </a>
+            </li>
+          </ul>
+
+          <p>CNPJ: 32.423.323/0001-84</p>
+        </main>
+      </div>
+    </BottomFullWidth>
+  </>
+);
 
 export default App;
