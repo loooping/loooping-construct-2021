@@ -19,7 +19,9 @@ const App: React.FC = () => (
             <img src={logoImage} alt="Loooping Desenvolvimento Web" />
           </a>
 
-          <h1>Loooping Desenvolvimento Web</h1>
+          <h1>Desenvolvimento Web/Mobile &</h1>
+          <h2>Consultoria Digital &</h2>
+          <h2>Cloud Hosting &</h2>
         </header>
       </div>
     </TopFullWidth>

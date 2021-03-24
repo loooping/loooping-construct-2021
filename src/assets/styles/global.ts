@@ -11,7 +11,7 @@ export default createGlobalStyle`
   html,
   body {
     -webkit-font-smoothing: antialiased;
-    font: 400 18px 'Raleway', sans-serif;
+    font: 400 18px 'Inter', sans-serif;
     letter-spacing: 0.03em;
     overflow-x: hidden;
   }
@@ -31,7 +31,7 @@ export default createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .container {

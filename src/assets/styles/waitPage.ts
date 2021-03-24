@@ -2,18 +2,13 @@ import styled from 'styled-components';
 
 const theme = {
   spacer: 8,
-  primaryColor: '#608EF9',
-  secondaryColor: '#AFCCF9',
+  primaryColor: '#17181C',
+  secondaryColor: '#1177C9',
 };
 
 export const TopFullWidth = styled.div`
   display: flex;
   height: 50vh;
-
-  @media (max-width: 768px) {
-    padding: ${theme.spacer * 4}px;
-    height: 35vh;
-  }
 
   .container {
     header {
@@ -23,21 +18,24 @@ export const TopFullWidth = styled.div`
       margin-bottom: ${theme.spacer * 4}px;
 
       a {
+        margin-bottom: ${theme.spacer * 3}px;
+
         img {
           width: 100%;
-          max-width: 450px;
+          max-width: 180px;
         }
       }
 
-      h1 {
-        font-size: 28px;
+      h1,
+      h2 {
+        font-size: 16px;
         width: 100%;
-        max-width: 450px;
         text-align: center;
-        font-weight: 500;
         margin: ${theme.spacer}px;
         padding: 0;
-        color: #141414;
+        color: ${theme.primaryColor};
+        text-transform: uppercase;
+        line-height: ${theme.spacer}px;
 
         @media (max-width: 768px) {
           font-size: 20px;
@@ -104,7 +102,7 @@ export const BottomFullWidth = styled.div`
             align-items: center;
             padding: ${theme.spacer}px;
             border-radius: ${theme.spacer}px;
-            font-weight: 500;
+            font-weight: 600;
             background: white;
             color: ${theme.primaryColor};
 
