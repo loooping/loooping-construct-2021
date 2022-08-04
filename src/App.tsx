@@ -16,12 +16,12 @@ const App: React.FC = () => (
       <div className="container">
         <header>
           <a href="/">
-            <img src={logoImage} alt="Loooping Desenvolvimento Web" />
+            <img src={logoImage} alt="Loooping Web Development+" />
           </a>
 
-          <h1>Desenvolvimento Web/Mobile &</h1>
-          <h2>Consultoria Digital &</h2>
-          <h2>Cloud Hosting &</h2>
+          <h1>Web and Mobile Development+</h1>
+          <h2>Digital Consultancy+</h2>
+          <h2>Cloud Hosting</h2>
         </header>
       </div>
     </TopFullWidth>
@@ -30,30 +30,15 @@ const App: React.FC = () => (
       <div className="container">
         <main>
           <p>
-            Nosso novo site está em desenvolvimento, se você precisa desenvolver
-            ou manter um projeto entre em contato conosco
+            Our new site is currently in development please reach us using the
+            contact below
           </p>
 
           <ul>
             <li>
-              <a href="mailto:contato@loooping.com.br?Subject=Quero%20falar%20sobre%20um%20novo%20projeto">
+              <a href="mailto:contato@loooping.com.br?Subject=Hello%20there">
                 <FiMail size={28} />
                 contato@loooping.com.br
-              </a>
-            </li>
-
-            <li>
-              <a href="tel:+5511998109325">
-                <FiPhoneCall size={28} />
-                <small>(11)</small>
-                99810-9325
-              </a>
-            </li>
-
-            <li>
-              <a href="https://t.me/loooping">
-                <FaTelegramPlane size={28} />
-                loooping
               </a>
             </li>
           </ul>
