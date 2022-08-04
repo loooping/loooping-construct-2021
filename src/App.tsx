@@ -1,6 +1,5 @@
 import React from 'react';
-import { FiMail, FiPhoneCall } from 'react-icons/fi';
-import { FaTelegramPlane } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
 
 import GlobalStyle from './assets/styles/global';
 
